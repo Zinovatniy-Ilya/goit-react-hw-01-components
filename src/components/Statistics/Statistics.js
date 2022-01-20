@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./Statistics.module.css";
-import PropTypes from "prop-types";
 
 function cellColor() {
   return `#${(Math.random().toString(16) + "00000").slice(2, 8)}`;
@@ -32,17 +31,3 @@ const Statistics = ({ title, stats }) => {
 };
 
 export default Statistics;
-
-Statistics.defaultProps = {
-  title: "title",
-};
-Statistics.propTypes = {
-  title: PropTypes.string,
-  stats: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
-    })
-  ),
-};
