@@ -9,12 +9,11 @@ import friends from "./json/friends.json";
 import transactions from "./json/transactions.json";
 
 const { name, tag, location, avatar, stats } = profileUsers;
-// console.log(profileUsers);
 
 function App() {
   return (
     <div className="App">
-      <h1>React. HomeWork-1</h1>
+      <h1>goit-react-hw-01-components</h1>
       <Profile
         name={name}
         tag={tag}
